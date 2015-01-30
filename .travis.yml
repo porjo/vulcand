@@ -5,6 +5,6 @@ go:
 install:
         - go get github.com/tools/godep
         - godep restore
-        - ln -s /home/travis/gopath/src/github.com/mailgun/vulcand /home/travis/gopath/src/github.com/porjo/vulcand
+        - ln -s /home/travis/gopath/src/github.com/porjo/vulcand /home/travis/gopath/src/github.com/mailgun/vulcand
 script:
         - go test -v ./...
