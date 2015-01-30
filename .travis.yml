@@ -1,12 +1,11 @@
 language: go
 go:
-        - 1.2
         - 1.3
         - 1.4
 
 install:
-        - go get github.com/tools/godep
-        - godep restore
+        #- go get github.com/tools/godep
+        #- godep restore
         - ln -s /home/travis/gopath/src/github.com/porjo/vulcand /home/travis/gopath/src/github.com/mailgun/vulcand
 script:
         - go test -v ./...
