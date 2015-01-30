@@ -1,11 +1,10 @@
 language: go
 go:
         - 1.3
-        - tip
 
 install:
         - go get github.com/tools/godep
         - godep restore
-        - find $GOPATH
+        - find /home/travis/gopath
 script:
         - go test -v ./...
